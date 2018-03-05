@@ -1,0 +1,5 @@
+node_modules/
+.fusebox/
+dist/
+yarn-error.log
+feelings.txt
