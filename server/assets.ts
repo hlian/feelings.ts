@@ -9,8 +9,8 @@ export const template = `
   <body>
     <h1>feelings.blackfriday</h1>
     <p>
-      {{#currentlyFriday}}it's friday in nyc{{/currentlyFriday}}
-      {{^currentlyFriday}}it's not friday in nyc{{/currentlyFriday}}
+      {{#currentlyFriday}}it's friday in NYC{{/currentlyFriday}}
+      {{^currentlyFriday}}it's not friday in NYC{{/currentlyFriday}}
     </p>
     <p>feelings submitted on a non-friday will be punished with a cosmopolitan light-gray text color</p>
     <p>slide into our DMs <a href="tel://1631400FEEL">+1631400FEEL</a> // check out <a href="http://frogfeels.com">FROG FEELS</a></p>
