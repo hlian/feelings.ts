@@ -93,7 +93,7 @@ router.post('/feeling', ctx => {
 router.get('/', ctx => {
   ctx.set('Cache-Control', 'no-cache');
   ctx.body = Mustache.render(template, {
-    currentlyFriday: true,
+    currentlyFriday: dates.isFriday(),
     feelings: feelings.map(mapFeelings),
   });
 });
