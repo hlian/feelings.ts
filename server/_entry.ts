@@ -5,7 +5,7 @@ import * as process from 'process';
 import * as writeFileAtomic from 'write-file-atomic';
 
 import * as Koa from 'koa';
-import * as koaBody from 'koa-body';
+import * as bodyParser from 'koa-bodyparser';
 import * as Router from 'koa-router';
 
 import { css, template } from 'server/assets';
@@ -51,6 +51,7 @@ Mustache.parse(template);
 
 const app = new Koa();
 const router = new Router();
+router.use(bodyParser());
 
 router.get('/css.css', ctx => {
   ctx.set('Cache-Control', 'public');
@@ -58,7 +59,7 @@ router.get('/css.css', ctx => {
   ctx.body = css;
 });
 
-router.post('/sms', koaBody(), ctx => {
+router.post('/sms', ctx => {
   const body = ctx.request.body;
   if (body && body.Body && body.From && body.To) {
     feelings.splice(0, 0, {
@@ -77,7 +78,7 @@ router.post('/sms', koaBody(), ctx => {
   }
 });
 
-router.post('/feeling', koaBody(), ctx => {
+router.post('/feeling', ctx => {
   const body = ctx.request.body;
   if (body && body.text && !isSpam(body.text)) {
     feelings.splice(0, 0, {
