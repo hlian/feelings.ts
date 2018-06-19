@@ -1,6 +1,9 @@
-export { parse } from 'date-fns';
-import * as isDateFriday from 'date-fns/is_friday';
+import { DateTime } from 'luxon';
+
+export const parse = (s: string): DateTime => {
+  return DateTime.fromISO(s).setZone('America/New_York');
+};
 
 export const isFriday = (): boolean => {
-  return isDateFriday(new Date());
+  return DateTime.fromObject({ zone: 'America/New_York' }).weekday === 5;
 };

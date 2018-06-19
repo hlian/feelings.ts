@@ -3,6 +3,7 @@ import * as http from 'http';
 import * as Mustache from 'mustache';
 import * as process from 'process';
 import * as writeFileAtomic from 'write-file-atomic';
+import {DateTime } from 'luxon';
 
 import * as Koa from 'koa';
 import * as bodyParser from 'koa-bodyparser';
@@ -15,7 +16,7 @@ import * as dates from 'server/dates';
 //////////////////////////////////////// Types
 
 interface Feeling {
-  time: Date;
+  time: DateTime;
   text: string;
   via: {
     tag: 'ViaPhone' | 'ViaWeb';
@@ -42,7 +43,7 @@ setInterval(() => {
 //////////////////////////////////////// Values
 
 const mapFeelings = ({ time, text, via }: Feeling) => ({
-  friday: time.getDay() === 5,
+  friday: time.weekday === 5,
   phone: via.tag === 'ViaPhone',
   text,
 });
