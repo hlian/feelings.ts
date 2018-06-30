@@ -3,7 +3,7 @@ import * as http from 'http';
 import * as Mustache from 'mustache';
 import * as process from 'process';
 import * as writeFileAtomic from 'write-file-atomic';
-import {DateTime } from 'luxon';
+import { DateTime } from 'luxon';
 
 import * as Koa from 'koa';
 import * as bodyParser from 'koa-bodyparser';
@@ -64,7 +64,7 @@ router.post('/sms', ctx => {
   const body = ctx.request.body;
   if (body && body.Body && body.From && body.To) {
     feelings.splice(0, 0, {
-      time: new Date(),
+      time: DateTime.utc(),
       text: body.Body,
       via: { tag: 'ViaPhone', contents: body.From },
     });
@@ -83,7 +83,7 @@ router.post('/feeling', ctx => {
   const body = ctx.request.body;
   if (body && body.text && !isSpam(body.text)) {
     feelings.splice(0, 0, {
-      time: new Date(),
+      time: DateTime.utc(),
       text: body.text,
       via: { tag: 'ViaWeb' },
     });
