@@ -2,12 +2,12 @@ export const template = `
 <!doctype html>
 <html>
   <head>
-    <title>feelings.blackfriday</title>
+    <title>feelings.supply</title>
     <link rel="stylesheet" href="/css.css?1">
     <meta charset="utf8">
   </head>
   <body>
-    <h1>feelings.blackfriday</h1>
+    <h1>feelings.supply</h1>
     <p>
       {{#currentlyFriday}}it's friday in NYC{{/currentlyFriday}}
       {{^currentlyFriday}}it's not friday in NYC{{/currentlyFriday}}
