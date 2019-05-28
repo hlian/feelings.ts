@@ -18,7 +18,7 @@
     "mustache": "^3.0.1",
     "onchange": "^5.2.0",
     "typescript": "^3.4.1",
-    "write-file-atomic": "^2.4.2"
+    "write-file-atomic": "^3.0.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
