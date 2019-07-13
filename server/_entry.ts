@@ -28,9 +28,11 @@ interface Feeling {
 
 const filename = 'feelings.txt';
 
-const reviver = (key: string, value: any) => (key === 'time' ? dates.parse(value) : value);
+const feelings: [Feeling] = JSON.parse(fs.readFileSync(filename, 'utf8'));
 
-const feelings: [Feeling] = JSON.parse(fs.readFileSync(filename, 'utf8'), reviver);
+feelings.map(f => {
+  f.time = dates.parse((f.time as unknown) as string);
+});
 
 setInterval(() => {
   writeFileAtomic(filename, JSON.stringify(feelings), error => {
@@ -64,7 +66,7 @@ router.post('/sms', ctx => {
   const body = ctx.request.body;
   if (body && body.Body && body.From && body.To) {
     feelings.splice(0, 0, {
-      time: DateTime.utc(),
+      time: dates.utc(),
       text: body.Body,
       via: { tag: 'ViaPhone', contents: body.From },
     });
@@ -83,7 +85,7 @@ router.post('/feeling', ctx => {
   const body = ctx.request.body;
   if (body && body.text && !isSpam(body.text)) {
     feelings.splice(0, 0, {
-      time: DateTime.utc(),
+      time: dates.utc(),
       text: body.text,
       via: { tag: 'ViaWeb' },
     });
