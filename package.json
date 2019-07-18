@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "test": "concurrently -n lint,tsc 'yarn jest' 'yarn tsc'",
-    "prettier-watch": "onchange 'fuse.js' 'server/**/*.ts' -- prettier --write {{changed}}"
+    "prettier-watch": "onchange 'fuse.js' 'server/**/*.ts' -- prettier --write {{changed}}",
+    "execstart": "node fuse.js dist && node dist/server.js"
   },
   "dependencies": {
     "koa": "^2.7.0",
