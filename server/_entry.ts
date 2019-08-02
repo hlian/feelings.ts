@@ -1,13 +1,11 @@
 import * as fs from 'fs';
-import * as http from 'http';
 import * as Mustache from 'mustache';
-import * as process from 'process';
-import * as writeFileAtomic from 'write-file-atomic';
+import writeFileAtomic from 'write-file-atomic';
 import { DateTime } from 'luxon';
 
-import * as Koa from 'koa';
-import * as bodyParser from 'koa-bodyparser';
-import * as Router from 'koa-router';
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
+import Router from 'koa-router';
 
 import { css, template } from 'server/assets';
 import { isSpam } from 'server/batteries';
@@ -83,10 +81,10 @@ router.post('/sms', ctx => {
 
 router.post('/feeling', ctx => {
   const body = ctx.request.body;
-  if (body && body.text && !isSpam(body.text)) {
+  if (body && !isSpam(body)) {
     feelings.splice(0, 0, {
       time: dates.utc(),
-      text: body.text,
+      text: body.ooga,
       via: { tag: 'ViaWeb' },
     });
   }

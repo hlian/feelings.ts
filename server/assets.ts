@@ -3,7 +3,7 @@ export const template = `
 <html>
   <head>
     <title>feelings.supply</title>
-    <link rel="stylesheet" href="/css.css?1">
+    <link rel="stylesheet" href="/css.css?2">
     <meta charset="utf8">
   </head>
   <body>
@@ -15,7 +15,8 @@ export const template = `
     <p>feelings submitted on a non-friday will be punished with a cosmopolitan light-gray text color</p>
     <p>slide into our DMs <a href="tel://1631400FEEL">+1631400FEEL</a> // check out <a href="http://frogfeels.com">FROG FEELS</a></p>
     <form action="/feeling" method="post">
-      <p><textarea placeholder="how are you feeling" name="text" tabindex="1"></textarea></p>
+      <p><textarea placeholder="how are you feeling" name="ooga" tabindex="1"></textarea></p>
+      <p><textarea placeholder="go away" name="text"></textarea></p>
       <p><input type="submit" tabindex="2"></p>
     </form>
 
@@ -91,5 +92,9 @@ input:focus {
     content: "💬 ";
     width: 2rem;
     display: inline-block;
+}
+
+textarea[name="text"] {
+  display: none;
 }
 `;

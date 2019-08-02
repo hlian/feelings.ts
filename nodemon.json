@@ -1,0 +1,4 @@
+{
+  "ext": "ts,tsx,css,html",
+  "exec": "DEBUG=strong-error-handler ts-node -r tsconfig-paths/register server/_entry.ts"
+}

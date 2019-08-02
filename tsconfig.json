@@ -2,12 +2,13 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2017",
-    "noEmit": true,
     "baseUrl": ".",
     "jsx": "react",
     "importHelpers": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "strict": true
+    "strict": true,
+    "esModuleInterop": true,
+    "incremental": true
   }
 }
