@@ -22,7 +22,7 @@
     "mustache": "^3.0.3",
     "nodemon": "^1.19.2",
     "onchange": "^6.1.0",
-    "ts-node": "^8.3.0",
+    "ts-node": "^8.4.1",
     "tsconfig-paths": "^3.8.0",
     "typescript": "^3.6.2",
     "write-file-atomic": "^3.0.0"
