@@ -25,7 +25,7 @@
     "ts-node": "^8.4.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.4",
-    "write-file-atomic": "^3.0.0"
+    "write-file-atomic": "^3.0.1"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
