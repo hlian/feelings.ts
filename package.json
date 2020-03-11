@@ -40,7 +40,7 @@
     "fuse-box": "^3.2.2",
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
-    "tslint": "^6.0.0"
+    "tslint": "^6.1.0"
   },
   "jest": {
     "moduleFileExtensions": [
