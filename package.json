@@ -39,7 +39,7 @@
     "concurrently": "^5.1.0",
     "fuse-box": "^3.2.2",
     "jest": "^25.2.7",
-    "prettier": "^2.0.3",
+    "prettier": "^2.0.4",
     "tslint": "^6.1.1"
   },
   "jest": {
