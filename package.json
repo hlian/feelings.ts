@@ -36,7 +36,7 @@
     "@types/mustache": "^4.0.1",
     "@types/node": "^13.7.6",
     "@types/write-file-atomic": "^3.0.0",
-    "concurrently": "^5.1.0",
+    "concurrently": "^5.2.0",
     "fuse-box": "^3.2.2",
     "jest": "^25.4.0",
     "prettier": "^2.0.5",
