@@ -17,7 +17,7 @@
   "dependencies": {
     "koa": "^2.12.0",
     "koa-bodyparser": "^4.3.0",
-    "koa-router": "^8.0.8",
+    "koa-router": "^9.0.1",
     "luxon": "^1.24.1",
     "mustache": "^4.0.1",
     "nodemon": "^2.0.4",
