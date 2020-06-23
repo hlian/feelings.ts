@@ -32,7 +32,7 @@
     "@types/koa": "^2.11.3",
     "@types/koa-bodyparser": "^4.3.0",
     "@types/koa-router": "^7.4.1",
-    "@types/luxon": "^1.24.0",
+    "@types/luxon": "^1.24.1",
     "@types/mustache": "^4.0.1",
     "@types/node": "^13.7.6",
     "@types/write-file-atomic": "^3.0.0",
