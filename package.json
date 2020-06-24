@@ -34,7 +34,7 @@
     "@types/koa-router": "^7.4.1",
     "@types/luxon": "^1.24.1",
     "@types/mustache": "^4.0.1",
-    "@types/node": "^13.7.6",
+    "@types/node": "^13.7.7",
     "@types/write-file-atomic": "^3.0.0",
     "concurrently": "^5.2.0",
     "fuse-box": "^3.2.2",
