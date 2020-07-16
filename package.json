@@ -24,7 +24,7 @@
     "onchange": "^7.0.2",
     "ts-node": "^8.10.2",
     "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.7.5",
+    "typescript": "^3.9.7",
     "write-file-atomic": "^3.0.3"
   },
   "devDependencies": {
