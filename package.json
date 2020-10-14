@@ -20,7 +20,7 @@
     "koa-router": "^9.4.0",
     "luxon": "^1.25.0",
     "mustache": "^4.0.1",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.5",
     "onchange": "^7.0.2",
     "ts-node": "^9.0.0",
     "tsconfig-paths": "^3.9.0",
