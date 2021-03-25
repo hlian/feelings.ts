@@ -28,7 +28,7 @@
     "write-file-atomic": "^3.0.3"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.21",
+    "@types/jest": "^26.0.22",
     "@types/koa": "^2.13.0",
     "@types/koa-bodyparser": "^4.3.0",
     "@types/koa-router": "^7.4.1",
