@@ -38,7 +38,7 @@
     "@types/write-file-atomic": "^3.0.1",
     "concurrently": "^6.2.0",
     "fuse-box": "^4.0.0",
-    "jest": "^27.0.1",
+    "jest": "^27.0.3",
     "prettier": "^2.3.0",
     "tslint": "^6.1.3"
   },
