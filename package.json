@@ -18,7 +18,7 @@
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0",
-    "luxon": "^2.0.1",
+    "luxon": "^2.5.2",
     "mustache": "^4.2.0",
     "nodemon": "^2.0.12",
     "onchange": "^7.1.0",
